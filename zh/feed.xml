@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>Jason Xi — 文章</title>
+  <link>https://blog.xiaobocm.com/zh/blog/</link>
+  <description>关于模型、机器，以及两者之间那些地方的笔记。</description>
+  <language>zh-Hans</language>
+  <lastBuildDate>Sun, 15 Nov 2026 20:41:21 +0800</lastBuildDate>
+  <atom:link href="https://blog.xiaobocm.com/zh/feed.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>时隔七十天，第三次重构</title>
+    <link>https://blog.xiaobocm.com/zh/blog/seventy-days-third-rebuild/</link>
+    <guid isPermaLink="true">https://blog.xiaobocm.com/zh/blog/seventy-days-third-rebuild/</guid>
+    <pubDate>Sun, 15 Nov 2026 09:00:00 +0800</pubDate>
+    <description>更安静的网站、更清楚的界面，以及那些教会我问更好问题的人。</description>
+    <category>建造</category>
+  </item>
+  <item>
+    <title>共同创办 SinoFlare 教我的研究课</title>
+    <link>https://blog.xiaobocm.com/zh/blog/research-together/</link>
+    <guid isPermaLink="true">https://blog.xiaobocm.com/zh/blog/research-together/</guid>
+    <pubDate>Mon, 12 Oct 2026 09:00:00 +0800</pubDate>
+    <description>一群愿意认真对待你半成形想法的人，是被低估的研究工具。</description>
+    <category>建造</category>
+  </item>
+</channel>
+</rss>

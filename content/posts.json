@@ -1,0 +1,32 @@
+{
+  "posts": [
+    {
+      "slug": "seventy-days-third-rebuild",
+      "date": "2026-11-15",
+      "category": "building",
+      "title": {
+        "en": "Seventy Days, a Third Rebuild",
+        "zh-Hans": "时隔七十天，第三次重构"
+      },
+      "subtitle": {
+        "en": "A quieter site, a clearer interface, and the people who taught me to ask better questions.",
+        "zh-Hans": "更安静的网站、更清楚的界面，以及那些教会我问更好问题的人。"
+      },
+      "draft": false
+    },
+    {
+      "slug": "research-together",
+      "date": "2026-10-12",
+      "category": "building",
+      "title": {
+        "en": "What Co-Founding SinoFlare Taught Me About Research",
+        "zh-Hans": "共同创办 SinoFlare 教我的研究课"
+      },
+      "subtitle": {
+        "en": "A small group of people who take your half-formed idea seriously is an underrated research instrument.",
+        "zh-Hans": "一群愿意认真对待你半成形想法的人，是被低估的研究工具。"
+      },
+      "draft": false
+    }
+  ]
+}

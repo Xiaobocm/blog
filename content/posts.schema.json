@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://blog.xiaobocm.com/content/posts.schema.json",
+  "title": "Xiaobocm blog index",
+  "description": "The single source of truth for the blog index and the home-page selected notes.",
+  "type": "object",
+  "required": ["posts"],
+  "additionalProperties": false,
+  "properties": {
+    "posts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["slug", "date", "category", "title", "subtitle"],
+        "additionalProperties": false,
+        "properties": {
+          "slug": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+            "description": "Directory name under blog/ and zh/blog/."
+          },
+          "date": {
+            "type": "string",
+            "format": "date",
+            "description": "ISO date, YYYY-MM-DD."
+          },
+          "category": {
+            "type": "string",
+            "enum": ["models", "machines", "building", "field"]
+          },
+          "title": {
+            "$ref": "#/$defs/localized"
+          },
+          "subtitle": {
+            "$ref": "#/$defs/localized"
+          },
+          "draft": {
+            "type": "boolean",
+            "default": false,
+            "description": "Draft posts stay out of the index and home page."
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "localized": {
+      "type": "object",
+      "required": ["en", "zh-Hans"],
+      "additionalProperties": false,
+      "properties": {
+        "en": {"type": "string", "minLength": 1},
+        "zh-Hans": {"type": "string", "minLength": 1}
+      }
+    }
+  }
+}

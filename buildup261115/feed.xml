@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>Jason Xi — Notes</title>
+  <link>https://blog.xiaobocm.com/blog/</link>
+  <description>Notes on models, machines, and the places in between.</description>
+  <language>en</language>
+  <lastBuildDate>Sun, 15 Nov 2026 20:41:21 +0800</lastBuildDate>
+  <atom:link href="https://blog.xiaobocm.com/feed.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Seventy Days, a Third Rebuild</title>
+    <link>https://blog.xiaobocm.com/blog/seventy-days-third-rebuild/</link>
+    <guid isPermaLink="true">https://blog.xiaobocm.com/blog/seventy-days-third-rebuild/</guid>
+    <pubDate>Sun, 15 Nov 2026 09:00:00 +0800</pubDate>
+    <description>A quieter site, a clearer interface, and the people who taught me to ask better questions.</description>
+    <category>Building</category>
+  </item>
+  <item>
+    <title>What Co-Founding SinoFlare Taught Me About Research</title>
+    <link>https://blog.xiaobocm.com/blog/research-together/</link>
+    <guid isPermaLink="true">https://blog.xiaobocm.com/blog/research-together/</guid>
+    <pubDate>Mon, 12 Oct 2026 09:00:00 +0800</pubDate>
+    <description>A small group of people who take your half-formed idea seriously is an underrated research instrument.</description>
+    <category>Building</category>
+  </item>
+</channel>
+</rss>

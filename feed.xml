@@ -31,5 +31,13 @@
     <description>What changed under the surface.</description>
     <category>Building</category>
   </item>
+  <item>
+    <title>A Middle Schooler's Dev Journey</title>
+    <link>https://www.xiaobocm.com/blog/dev-journey/</link>
+    <guid isPermaLink="true">https://www.xiaobocm.com/blog/dev-journey/</guid>
+    <pubDate>Fri, 21 Nov 2026 21:20:00 +0800</pubDate>
+    <description>Seven days, a complete static site rebuild, and a shift from chasing aesthetics to focusing on content.</description>
+    <category>Daily</category>
+</item>
 </channel>
 </rss>

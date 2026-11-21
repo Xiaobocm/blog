@@ -28,7 +28,7 @@
       },
       "draft": false
    }
-  {
+   {
     "slug": "demo",
     "date": "2026-11-21",
     "category": "building",
@@ -41,6 +41,6 @@
       "zh-Hans": "表面之下，什么变了。"
     },
     "draft": false
-  }
+    }
   ]
 }

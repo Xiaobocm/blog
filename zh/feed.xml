@@ -31,5 +31,13 @@
     <description>表面之下，什么变了。</description>
     <category>建造</category>
   </item>
+  <item>
+    <title>一个初中生的开发之路</title>
+    <link>https://www.xiaobocm.com/zh/blog/dev-journey/</link>
+    <guid isPermaLink="true">https://www.xiaobocm.com/zh/blog/dev-journey/</guid>
+    <pubDate>Fri, 21 Nov 2026 09:00:00 +0800</pubDate>
+    <description>历时7天完成纯静态重构，从追求美观到注重内容。</description>
+  <category>日常</category>
+</item>
 </channel>
 </rss>

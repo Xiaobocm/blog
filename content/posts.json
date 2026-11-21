@@ -27,6 +27,20 @@
         "zh-Hans": "一群愿意认真对待你半成形想法的人，是被低估的研究工具。"
       },
       "draft": false
-    }
+   }
+  {
+    "slug": "demo",
+    "date": "2026-11-21",
+    "category": "building",
+    "title": {
+      "en": "Demo",
+      "zh-Hans": "Demo"
+     },
+      "subtitle": {
+      "en": "What changed under the surface.",
+      "zh-Hans": "表面之下，什么变了。"
+    },
+    "draft": false
+  }
   ]
 }

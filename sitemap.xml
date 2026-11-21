@@ -48,4 +48,12 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://www.xiaobocm.com/blog/demo/</loc>
+    <lastmod>2026-11-21</lastmod>
+  </url>
+  <url>
+    <loc>https://www.xiaobocm.com/zh/blog/demo/</loc>
+    <lastmod>2026-11-21</lastmod>
+  </url>
 </urlset>

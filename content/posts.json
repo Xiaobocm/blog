@@ -29,23 +29,9 @@
       "draft": false
     },
     {
-      "slug": "demo",
-      "date": "2026-11-21",
-      "category": "building",
-      "title": {
-        "en": "Demo",
-        "zh-Hans": "Demo"
-      },
-      "subtitle": {
-        "en": "What changed under the surface.",
-        "zh-Hans": "表面之下，什么变了。"
-      },
-      "draft": false
-    },
-    {
       "slug": "dev-journey",
       "date": "2026-11-21",
-      "category": "building",
+      "category": "daily",
       "title": {
         "en": "A Middle Schooler's Dev Journey",
         "zh-Hans": "一个初中生的开发之路"

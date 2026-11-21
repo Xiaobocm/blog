@@ -117,9 +117,12 @@ The empty states at `/blog/` and `/zh/blog/` appear only if `content/posts.json`
    - Source: **Deploy from a branch**
    - Branch: `main`
    - Folder: `/ (root)`
-5. `CNAME` already contains `blog.xiaobocm.com`.
-6. DNS: add a `CNAME` record for `blog` pointing to `Xiaobocm.github.io`. Use DNS-only mode first (not proxied).
-7. In Pages, set the custom domain to `blog.xiaobocm.com` and enable **Enforce HTTPS**.
+5. `CNAME` already contains `www.xiaobocm.com`.
+6. DNS:
+   - `www` → `CNAME` → `Xiaobocm.github.io`
+   - apex `@` → `A` → `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
+   - Keep both records DNS-only (not proxied). GitHub Pages redirects the apex to `https://www.xiaobocm.com/`.
+7. In Pages, set the custom domain to `www.xiaobocm.com` and enable **Enforce HTTPS**.
 
 `.nojekyll` is included.
 

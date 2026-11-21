@@ -29,7 +29,7 @@ The blog currently starts with two notes. Everything needed to add the next one 
 ├── .github/workflows/
 │   └── refresh-contributions.yml       Daily contribution snapshot
 ├── sw.js                               Network-first HTML + offline pages
-└── CNAME                               blog.xiaobocm.com
+└── CNAME                               www.xiaobocm.com
 ```
 
 ## Blog data interface
@@ -87,7 +87,7 @@ The JSON Schema is `content/posts.schema.json`. Editors such as VS Code can use 
 
 ```js
 window.XiaobocmContent = {
-  endpoint: "https://blog.xiaobocm.com/content/posts.json",
+  endpoint: "https://www.xiaobocm.com/content/posts.json",
   posts: [ /* current, filtered and sorted posts */ ],
   reload: async () => { /* fetch and re-render */ }
 };

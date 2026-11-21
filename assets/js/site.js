@@ -165,9 +165,9 @@
 
   const postHref = (slug, context) => {
     if (context === "blog") return `./${encodeURIComponent(slug)}/`;
-    return pageLang === "zh-Hans"
-      ? `./zh/blog/${encodeURIComponent(slug)}/`
-      : `./blog/${encodeURIComponent(slug)}/`;
+    // Both home pages already live above their own blog/ directory:
+    // / -> /blog/<slug>/ and /zh/ -> /zh/blog/<slug>/.
+    return `./blog/${encodeURIComponent(slug)}/`;
   };
 
   const renderEmpty = (container, text) => {

@@ -1,5 +1,5 @@
 /* ==========================================================================
-   A tiny particle field: purple triangles and thin lines on a quiet page.
+   A small particle field: sea-blue triangles and thin lines on a quiet page.
    No library. It pauses when the tab is hidden and respects reduced motion.
    ========================================================================== */
 
@@ -27,10 +27,13 @@
     return {
       x: x ?? rand(0, width),
       y: y ?? rand(0, height),
-      vx: rand(-0.28, 0.28),
-      vy: rand(-0.28, 0.28),
-      size: rand(2.4, 5.2),
-      opacity: rand(0.18, 0.8),
+      vx: rand(-0.7, 0.7),
+      vy: rand(-0.7, 0.7),
+      size: rand(2.2, 6.2),
+      opacity: rand(0.24, 0.88),
+      angle: rand(0, Math.PI * 2),
+      spin: rand(-0.009, 0.009),
+      phase: rand(0, Math.PI * 2),
     };
   }
 
@@ -44,7 +47,7 @@
     canvas.style.height = `${height}px`;
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
 
-    const count = Math.max(6, Math.min(22, Math.round((width * height) / 95000)));
+    const count = Math.max(8, Math.min(24, Math.round((width * height) / 82000)));
     particles = Array.from({ length: count }, () => makeParticle());
 
     if (reducedMotion) {
@@ -53,6 +56,9 @@
   }
 
   function draw(staticFrame = false) {
+    // requestAnimationFrame passes a timestamp. Keep only an explicit `true`
+    // as the static-frame flag, otherwise the animation stops after one frame.
+    staticFrame = staticFrame === true;
     ctx.clearRect(0, 0, width, height);
 
     for (const particle of particles) {
@@ -61,24 +67,26 @@
           const dx = particle.x - mouse.x;
           const dy = particle.y - mouse.y;
           const distance = Math.hypot(dx, dy);
-          if (distance > 0 && distance < 110) {
-            const force = (110 - distance) / 110;
-            particle.vx += (dx / distance) * force * 0.018;
-            particle.vy += (dy / distance) * force * 0.018;
+          if (distance > 0 && distance < 140) {
+            const force = (140 - distance) / 140;
+            particle.vx += (dx / distance) * force * 0.025;
+            particle.vy += (dy / distance) * force * 0.025;
           }
         }
 
         particle.x += particle.vx;
         particle.y += particle.vy;
+        particle.angle += particle.spin;
+        particle.phase += 0.018;
 
-        particle.vx *= 0.995;
-        particle.vy *= 0.995;
+        particle.vx *= 0.998;
+        particle.vy *= 0.998;
 
-        if (Math.abs(particle.vx) < 0.05) {
-          particle.vx += rand(-0.006, 0.006);
+        if (Math.abs(particle.vx) < 0.12) {
+          particle.vx += rand(-0.01, 0.01);
         }
-        if (Math.abs(particle.vy) < 0.05) {
-          particle.vy += rand(-0.006, 0.006);
+        if (Math.abs(particle.vy) < 0.12) {
+          particle.vy += rand(-0.01, 0.01);
         }
 
         if (particle.x < -10) particle.x = width + 10;
@@ -87,13 +95,21 @@
         if (particle.y > height + 10) particle.y = -10;
       }
 
+      const alpha = staticFrame
+        ? particle.opacity
+        : particle.opacity * (0.82 + Math.sin(particle.phase) * 0.18);
+
+      ctx.save();
+      ctx.translate(particle.x, particle.y);
+      ctx.rotate(particle.angle);
       ctx.beginPath();
-      ctx.moveTo(particle.x, particle.y - particle.size);
-      ctx.lineTo(particle.x + particle.size * 0.9, particle.y + particle.size * 0.7);
-      ctx.lineTo(particle.x - particle.size * 0.9, particle.y + particle.size * 0.7);
+      ctx.moveTo(0, -particle.size);
+      ctx.lineTo(particle.size * 0.9, particle.size * 0.7);
+      ctx.lineTo(-particle.size * 0.9, particle.size * 0.7);
       ctx.closePath();
-      ctx.fillStyle = `rgba(${COLOR}, ${particle.opacity})`;
+      ctx.fillStyle = `rgba(${COLOR}, ${alpha})`;
       ctx.fill();
+      ctx.restore();
     }
 
     for (let i = 0; i < particles.length; i++) {
@@ -101,19 +117,19 @@
         const a = particles[i];
         const b = particles[j];
         const distance = Math.hypot(a.x - b.x, a.y - b.y);
-        if (distance >= 150) continue;
+        if (distance >= 160) continue;
 
         ctx.beginPath();
         ctx.moveTo(a.x, a.y);
         ctx.lineTo(b.x, b.y);
-        ctx.strokeStyle = `rgba(${COLOR}, ${(1 - distance / 150) * 0.24})`;
+        ctx.strokeStyle = `rgba(${COLOR}, ${(1 - distance / 160) * 0.3})`;
         ctx.lineWidth = 1;
         ctx.stroke();
       }
     }
 
     if (!staticFrame && !reducedMotion) {
-      frame = window.requestAnimationFrame(draw);
+      frame = window.requestAnimationFrame(() => draw());
     }
   }
 

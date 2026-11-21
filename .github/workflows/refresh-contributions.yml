@@ -1,0 +1,41 @@
+name: Refresh GitHub contributions
+
+on:
+  schedule:
+    # 01:17 UTC = 09:17 Asia/Shanghai
+    - cron: "17 1 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-github-contributions
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Snapshot public contribution calendar
+        run: python tools/fetch-contributions.py
+
+      - name: Commit when the calendar changed
+        run: |
+          if git diff --quiet -- content/contributions.json; then
+            echo "No contribution changes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add content/contributions.json
+          git commit -m "chore: refresh GitHub contributions"
+          git push

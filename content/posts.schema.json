@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://blog.xiaobocm.com/content/posts.schema.json",
+  "$id": "https://www.xiaobocm.com/content/posts.schema.json",
   "title": "Xiaobocm blog index",
   "description": "The single source of truth for the blog index and the home-page selected notes.",
   "type": "object",

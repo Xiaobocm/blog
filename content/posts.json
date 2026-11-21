@@ -1,64 +1,46 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://www.xiaobocm.com/</loc>
-    <lastmod>2026-11-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.xiaobocm.com/blog/</loc>
-    <lastmod>2026-11-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.xiaobocm.com/zh/</loc>
-    <lastmod>2026-11-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.xiaobocm.com/zh/blog/</loc>
-    <lastmod>2026-11-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.xiaobocm.com/blog/seventy-days-third-rebuild/</loc>
-    <lastmod>2026-11-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.xiaobocm.com/zh/blog/seventy-days-third-rebuild/</loc>
-    <lastmod>2026-11-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.xiaobocm.com/blog/research-together/</loc>
-    <lastmod>2026-10-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.xiaobocm.com/zh/blog/research-together/</loc>
-    <lastmod>2026-10-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <!-- 下面是新增的 demo 文章 -->
-  <url>
-    <loc>https://www.xiaobocm.com/blog/demo/</loc>
-    <lastmod>2026-11-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.xiaobocm.com/zh/blog/demo/</loc>
-    <lastmod>2026-11-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-</urlset>
+{
+  "posts": [
+    {
+      "slug": "seventy-days-third-rebuild",
+      "date": "2026-11-15",
+      "category": "building",
+      "title": {
+        "en": "Seventy Days, a Third Rebuild",
+        "zh-Hans": "时隔七十天，第三次重构"
+      },
+      "subtitle": {
+        "en": "A quieter site, a clearer interface, and the people who taught me to ask better questions.",
+        "zh-Hans": "更安静的网站、更清楚的界面，以及那些教会我问更好问题的人。"
+      },
+      "draft": false
+    },
+    {
+      "slug": "research-together",
+      "date": "2026-10-12",
+      "category": "building",
+      "title": {
+        "en": "What Co-Founding SinoFlare Taught Me About Research",
+        "zh-Hans": "共同创办 SinoFlare 教我的研究课"
+      },
+      "subtitle": {
+        "en": "A small group of people who take your half-formed idea seriously is an underrated research instrument.",
+        "zh-Hans": "一群愿意认真对待你半成形想法的人，是被低估的研究工具。"
+      },
+      "draft": false
+    },
+    {
+      "slug": "demo",
+      "date": "2026-11-21",
+      "category": "building",
+      "title": {
+        "en": "Demo",
+        "zh-Hans": "Demo"
+      },
+      "subtitle": {
+        "en": "What changed under the surface.",
+        "zh-Hans": "表面之下，什么变了。"
+      },
+      "draft": false
+    }
+  ]
+}

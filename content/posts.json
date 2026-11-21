@@ -41,6 +41,20 @@
         "zh-Hans": "表面之下，什么变了。"
       },
       "draft": false
+    },
+    {
+      "slug": "dev-journey",
+      "date": "2026-11-21",
+      "category": "building",
+      "title": {
+        "en": "A Middle Schooler's Dev Journey",
+        "zh-Hans": "一个初中生的开发之路"
+      },
+      "subtitle": {
+        "en": "Seven days, a complete static site rebuild, and a shift from chasing aesthetics to focusing on content.",
+        "zh-Hans": "历时7天完成纯静态重构，从追求美观到注重内容。"
+      },
+      "draft": false
     }
   ]
 }

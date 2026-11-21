@@ -5,7 +5,7 @@
   <link>https://www.xiaobocm.com/zh/blog/</link>
   <description>关于模型、机器，以及两者之间那些地方的笔记。</description>
   <language>zh-Hans</language>
-  <lastBuildDate>Sat, 21 Nov 2026 20:12:22 +0800</lastBuildDate>
+  <lastBuildDate>Sat, 21 Nov 2026 21:04:38 +0800</lastBuildDate>
   <atom:link href="https://www.xiaobocm.com/zh/feed.xml" rel="self" type="application/rss+xml"/>
   <item>
     <title>时隔七十天，第三次重构</title>
@@ -25,10 +25,11 @@
   </item>
   <item>
     <title>Demo</title>
-    <link>https://你的域名/zh/blog/demo/</link>
-    <guid isPermaLink="true">https://你的域名/zh/blog/demo/</guid>
+    <link>https://www.xiaobocm.com/zh/blog/demo/</link>
+    <guid isPermaLink="true">https://www.xiaobocm.com/zh/blog/demo/</guid>
     <pubDate>Fri, 21 Nov 2026 09:00:00 +0800</pubDate>
     <description>表面之下，什么变了。</description>
+    <category>建造</category>
   </item>
 </channel>
 </rss>

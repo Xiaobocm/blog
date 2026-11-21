@@ -1,5 +1,5 @@
 {
-  "version": "2026.11.21.24",
-  "builtAt": "2026-11-21T20:12:22+08:00",
+  "version": "2026.11.21.27",
+  "builtAt": "2026-11-21T21:04:38+08:00",
   "note": "Use python tools/bump-version.py <version> when deploying."
 }

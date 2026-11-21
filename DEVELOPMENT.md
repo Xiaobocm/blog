@@ -74,7 +74,7 @@ One entry:
 | --- | --- | --- |
 | `slug` | yes | Directory name under `blog/` and `zh/blog/`. Lowercase letters, numbers, hyphens. |
 | `date` | yes | ISO `YYYY-MM-DD`. Used for sorting and display. |
-| `category` | yes | `models`, `machines`, `building`, or `field`. |
+| `category` | yes | `models`, `building`, `daily`, or `other`. |
 | `title.en` / `title.zh-Hans` | yes | Display title for each language. |
 | `subtitle.en` / `subtitle.zh-Hans` | yes | Hover-preview text for each language. |
 | `draft` | no | `true` hides the note from the index and home page. Default `false`. |
@@ -198,7 +198,7 @@ The article styles support `p`, `h2`, `h3`, `blockquote`, `ul`, `ol`, `pre > cod
 
 ### 2. Create the Chinese page
 
-Copy `zh/blog/index.html` to `zh/blog/<slug>/index.html` and repeat the same process. Use the Chinese title, description, and body; change the footer link to `../../` and the category label to `模型` / `机器` / `建造` / `随笔`.
+Copy `zh/blog/index.html` to `zh/blog/<slug>/index.html` and repeat the same process. Use the Chinese title, description, and body; change the footer link to `../../` and the category label to `模型` / `建造` / `日常` / `其他`.
 
 ### 3. Add the index entry
 
@@ -226,12 +226,12 @@ The version bump updates `data-build` and `?v=` in every HTML file, `build.json`
 
 ## Categories
 
-| Key | English label | Chinese label | Accent |
+| Key | English | Chinese | Accent |
 | --- | --- | --- | --- |
 | `models` | Models | 模型 | blue |
-| `machines` | Machines | 机器 | sea green |
 | `building` | Building | 建造 | violet |
-| `field` | Field | 随笔 | amber |
+| `daily` | Daily | 日常 | amber |
+| `other` | Other | 其他 | muted rose |
 
 ## Theme and language
 

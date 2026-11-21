@@ -209,9 +209,9 @@
     blogList.replaceChildren();
 
     for (const post of posts) {
-      const category = ["models", "machines", "building", "field"].includes(post.category)
+      const category = ["models", "building", "daily", "other"].includes(post.category)
         ? post.category
-        : "field";
+        : "other";
       const link = document.createElement("a");
       link.className = `blog-entry ${category}`;
       link.href = postHref(post.slug, "blog");

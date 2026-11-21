@@ -11,13 +11,13 @@ The blog index and the home-page “Selected notes” are generated from `conten
 ```yaml
 slug: your-slug                  # lowercase letters, numbers, hyphens
 date: 2026-11-15                 # YYYY-MM-DD
-category: building               # models | machines | building | field
+category: building               # models | building | daily | other
 title_en: Your English title
 title_zh: 你的中文标题
 subtitle_en: One line for the index hover preview.
 subtitle_zh: 索引悬停预览的一行中文。
 description_en: One or two sentences for search/social metadata.
-description_zh: 给搜寻与社群摘要的一两句中文。
+description_zh: 给搜索与社交摘要的一两句中文。
 ```
 
 This worksheet is for you; the actual source of truth is one object in `content/posts.json`.
@@ -156,9 +156,9 @@ Put alt text on images and captions in a following `<p class="caption">` if need
 | Key | English | Chinese |
 | --- | --- | --- |
 | `models` | Models | 模型 |
-| `machines` | Machines | 机器 |
 | `building` | Building | 建造 |
-| `field` | Field | 随笔 |
+| `daily` | Daily | 日常 |
+| `other` | Other | 其他 |
 
 ## 8. Validate and publish
 

@@ -4,7 +4,7 @@
    so the HTML is never served from a stale cache.
    ========================================================================== */
 
-const BUILD = "2026.11.21.24";
+const BUILD = "2026.11.21.27";
 const CACHE = `xb-offline-${BUILD}`;
 const OFFLINE_EN = new URL("offline.html", self.registration.scope).href;
 const OFFLINE_ZH = new URL("zh/offline.html", self.registration.scope).href;

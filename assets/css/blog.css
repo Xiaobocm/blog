@@ -1,20 +1,20 @@
 /* ==========================================================================
-   Blog index — a small list, three quiet categories.
+   Blog index — a small list, four quiet categories.
    ========================================================================== */
 
 :root {
   --models-bg: rgba(47, 127, 168, 0.06);
-  --machines-bg: rgba(47, 143, 126, 0.06);
   --building-bg: rgba(108, 92, 160, 0.06);
-  --field-bg: rgba(176, 122, 63, 0.07);
+  --daily-bg: rgba(176, 122, 63, 0.07);
+  --other-bg: rgba(135, 105, 105, 0.06);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --models-bg: rgba(47, 127, 168, 0.2);
-    --machines-bg: rgba(47, 143, 126, 0.2);
     --building-bg: rgba(108, 92, 160, 0.24);
-    --field-bg: rgba(176, 122, 63, 0.22);
+    --daily-bg: rgba(176, 122, 63, 0.22);
+    --other-bg: rgba(135, 105, 105, 0.22);
   }
 }
 
@@ -111,19 +111,19 @@
   background: rgba(47, 127, 168, 0.3);
 }
 
-.legend-color.machines {
-  border-color: rgba(47, 143, 126, 0.45);
-  background: rgba(47, 143, 126, 0.3);
-}
-
 .legend-color.building {
   border-color: rgba(108, 92, 160, 0.45);
   background: rgba(108, 92, 160, 0.32);
 }
 
-.legend-color.field {
+.legend-color.daily {
   border-color: rgba(176, 122, 63, 0.45);
   background: rgba(176, 122, 63, 0.32);
+}
+
+.legend-color.other {
+  border-color: rgba(135, 105, 105, 0.45);
+  background: rgba(135, 105, 105, 0.32);
 }
 
 .legend-item.active .legend-color {
@@ -189,19 +189,19 @@
   background: var(--models-bg);
 }
 
-.blog-entry.machines .blog-title {
-  margin-left: 2rem;
-  background: var(--machines-bg);
-}
-
 .blog-entry.building .blog-title {
   margin-left: 2rem;
   background: var(--building-bg);
 }
 
-.blog-entry.field .blog-title {
+.blog-entry.daily .blog-title {
   margin-left: 2rem;
-  background: var(--field-bg);
+  background: var(--daily-bg);
+}
+
+.blog-entry.other .blog-title {
+  margin-left: 2rem;
+  background: var(--other-bg);
 }
 
 .blog-entry:hover .blog-title {
@@ -335,9 +335,9 @@
 
   .blog-title,
   .blog-entry.models .blog-title,
-  .blog-entry.machines .blog-title,
   .blog-entry.building .blog-title,
-  .blog-entry.field .blog-title {
+  .blog-entry.daily .blog-title,
+  .blog-entry.other .blog-title {
     margin-left: 0.25rem;
     font-size: 0.9rem;
   }

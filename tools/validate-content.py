@@ -19,7 +19,7 @@ SCHEMA = ROOT / "content" / "posts.schema.json"
 BASE = "https://www.xiaobocm.com"
 SLUG = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
 DATE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
-CATEGORIES = {"models", "machines", "building", "field"}
+CATEGORIES = {"models", "building", "daily", "other"}
 LANGS = {"en", "zh-Hans"}
 
 errors: list[str] = []

@@ -23,5 +23,12 @@
     <description>一群愿意认真对待你半成形想法的人，是被低估的研究工具。</description>
     <category>建造</category>
   </item>
+  <item>
+    <title>Demo</title>
+    <link>https://你的域名/zh/blog/demo/</link>
+    <guid isPermaLink="true">https://你的域名/zh/blog/demo/</guid>
+    <pubDate>Fri, 21 Nov 2026 09:00:00 +0800</pubDate>
+    <description>表面之下，什么变了。</description>
+  </item>
 </channel>
 </rss>
